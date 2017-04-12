@@ -1,20 +1,13 @@
 var React = require('react');
+var Nav = require('Navigation');
 
 var Main = (props) => {
   return (
     <div>
-      <div>
-        <div className="container">
-          <button type="button" className="btn btn-primary">Primary</button>
-
-          <span className="glyphicon glyphicon-search" aria-hidden="true"></span>
-
-
-          <i className="fa fa-fort-awesome" aria-hidden="true"></i>
-
-          <p>Main.jsx Rendered!</p>
-          {props.children}
-        </div>
+      <Nav/>
+      <div className="container">
+        <p>Main.jsx Rendered!</p>
+        {props.children}
       </div>
     </div>
   );
