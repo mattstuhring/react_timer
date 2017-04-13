@@ -42,5 +42,16 @@ a {
 }
 
 .navbar-inverse .navbar-link:hover {
-    color: $lightBlue;
+  color: $lightBlue;
+}
+
+.navbar-inverse .navbar-link {
+  color: $darkBlue;
+}
+
+div.navbar-header p.navbar-text {
+  margin: 0;
+  font-size: 22px;
+  margin-top: 7px;
+  margin-right: 15px;
 }
