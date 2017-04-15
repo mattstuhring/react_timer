@@ -1,57 +1,63 @@
-@mixin transition($args...) {
-  -webkit-transition: $args;
-  -moz-transition: $args;
-  -ms-transition: $args;
-  -o-transition: $args;
-  transition: $args;
-}
-
-$lightBlue: #3399ff;
-$darkBlue: #287acc;
-$compTop: 100px;
+@import "base/variables";
+@import "components/navigation.scss";
+@import "components/timer.scss";
+@import "components/countdown.scss";
 
 
-a {
-  color: $darkBlue;
-  @include transition(color .5s ease);
-  &:hover, &:focus {
-    color: $lightBlue;
-    text-decoration: none;
-  }
-}
-
-.navbar-right {
-  margin-right: 0px;
-}
-
-.timer {
-  margin-top: $compTop;
-}
-
-.countdown {
-  margin-top: $compTop;
-}
-
-.active-link {
-  font-weight: bold;
-  color: $lightBlue;
-}
-
-.navbar-inverse .navbar-text, .navbar-text p {
-  color: white;
-}
-
-.navbar-inverse .navbar-link:hover {
-  color: $lightBlue;
-}
-
-.navbar-inverse .navbar-link {
-  color: $darkBlue;
-}
-
-div.navbar-header p.navbar-text {
-  margin: 0;
-  font-size: 22px;
-  margin-top: 7px;
-  margin-right: 15px;
-}
+// @mixin transition($args...) {
+//   -webkit-transition: $args;
+//   -moz-transition: $args;
+//   -ms-transition: $args;
+//   -o-transition: $args;
+//   transition: $args;
+// }
+//
+// $lightBlue: #3399ff;
+// $darkBlue: #287acc;
+// $compTop: 100px;
+//
+//
+// a {
+//   color: $darkBlue;
+//   @include transition(color .5s ease);
+//   &:hover, &:focus {
+//     color: $lightBlue;
+//     text-decoration: none;
+//   }
+// }
+//
+// .navbar-right {
+//   margin-right: 0px;
+// }
+//
+// .timer {
+//   margin-top: $compTop;
+// }
+//
+// .countdown {
+//   margin-top: $compTop;
+// }
+//
+// .active-link {
+//   font-weight: bold;
+//   color: $lightBlue;
+// }
+//
+// .navbar-inverse .navbar-text, .navbar-text p {
+//   color: white;
+// }
+//
+// .navbar-inverse .navbar-link:hover {
+//   color: $lightBlue;
+// }
+//
+// .navbar-inverse .navbar-link {
+//   color: $darkBlue;
+// }
+//
+// div.navbar-header p.navbar-text {
+//   margin: 0;
+//   font-size: 22px;
+//   margin-top: 7px;
+//   margin-right: 15px;
+// }

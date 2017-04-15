@@ -3,5 +3,5 @@
 ## Tools:
   - React
   - Webpack v1
-  - Bootstrap & React Bootstrap
+  - Bootstrap
   - Font Awesome

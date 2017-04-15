@@ -1,0 +1,30 @@
+.navbar-inverse .navbar-nav>li>a {
+  color: $darkBlue;
+  @include transition(color 1s ease);
+  &:hover, &:focus {
+    color: $lightBlue;
+    text-decoration: none;
+  }
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+.navbar-text.navbar-right {
+  margin-right: 0px;
+}
+
+.navbar-inverse .navbar-nav>li>a.active-link {
+  color: $lightBlue;
+}
+
+.navbar-inverse .navbar-right>p>a {
+  color: $darkBlue;
+  @include transition(color 1s ease);
+}
+
+.navbar-inverse .navbar-right>p>a:hover {
+  color: $lightBlue;
+  text-decoration: none;
+}

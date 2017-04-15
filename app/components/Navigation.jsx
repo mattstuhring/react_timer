@@ -1,36 +1,40 @@
 var React = require('react');
 var { Link, IndexLink } = require('react-router');
-var { Navbar, Nav, NavItem } = require('react-bootstrap');
 
 var Navigation = () => {
   return (
     <div>
-      <Navbar inverse collapseOnSelect fixedTop>
-        <Navbar.Header>
-          {/* Nav App Name */}
-          <Navbar.Text>
-            React Timer
-          </Navbar.Text>
-          <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
-          {/* Nav links left */}
-          <Nav>
-            <Navbar.Text>
-              <IndexLink to="/" activeClassName="active-link">Timer</IndexLink>
-            </Navbar.Text>
-            <Navbar.Text>
-              <Link to="/countdown" activeClassName="active-link">Countdown</Link>
-            </Navbar.Text>
-          </Nav>
-          {/* Nav links right */}
-          <Nav pullRight>
-            <Navbar.Text pullRight>
-              Created by <Navbar.Link href="http://www.mattstuhring.com" target="_blank">Matt Stuhring</Navbar.Link>
-            </Navbar.Text>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+      <nav className="navbar navbar-inverse navbar-fixed-top">
+        <div className="container">
+          <div className="navbar-header">
+            <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+              <span className="sr-only">Toggle navigation</span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+              <span className="icon-bar"></span>
+            </button>
+            <Link className="navbar-brand nav-title" to="/" activeClassName="active-link">React Timer App</Link>
+          </div>
+
+          <div className="collapse navbar-collapse" id="navbar-collapse-1">
+
+
+            <ul className="nav navbar-nav">
+              <li>
+                <IndexLink to="/" activeClassName="active-link">Timer</IndexLink>
+              </li>
+              <li>
+                <Link to="/countdown" activeClassName="active-link">Countdown</Link>
+              </li>
+            </ul>
+
+
+            <ul className="nav navbar-nav navbar-right">
+              <p className="navbar-text navbar-right">Created by <a href="http://www.mattstuhring.com" target="_blank" className="navbar-link">Matt Stuhring</a></p>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
   );
 };
