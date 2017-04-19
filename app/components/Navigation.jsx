@@ -17,8 +17,7 @@ var Navigation = () => {
           </div>
 
           <div className="collapse navbar-collapse" id="navbar-collapse-1">
-
-
+            
             <ul className="nav navbar-nav">
               <li>
                 <IndexLink to="/" activeClassName="active-link">Timer</IndexLink>
@@ -27,7 +26,6 @@ var Navigation = () => {
                 <Link to="/countdown" activeClassName="active-link">Countdown</Link>
               </li>
             </ul>
-
 
             <ul className="nav navbar-nav navbar-right">
               <p className="navbar-text navbar-right">Created by <a href="http://www.mattstuhring.com" target="_blank" className="navbar-link">Matt Stuhring</a></p>

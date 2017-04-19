@@ -1,30 +1,33 @@
-.navbar-inverse .navbar-nav > li > a {
-  color: $darkBlue;
-  @include transition(color 1s ease);
-  &:hover, &:focus {
-    color: $lightBlue;
-    text-decoration: none;
-  }
-}
+.navbar-inverse {
 
-.navbar-inverse .navbar-brand {
-  color: white;
+  .navbar-nav > li > a {
+    color: $nav-dark-blue;
+    @include transition(color 1s ease);
+    &:hover, &:focus {
+      color: $nav-light-blue;
+      text-decoration: none;
+    }
+  }
+
+  .navbar-brand {
+    color: white;
+  }
+
+  .navbar-nav > li > a.active-link {
+    color: $nav-light-blue;
+    font-weight: bold;
+  }
+
+  .navbar-right > p > a {
+    color: $nav-dark-blue;
+    @include transition(color 1s ease);
+    &:hover {
+      color: $nav-light-blue;
+      text-decoration: none;
+    }
+  }
 }
 
 .navbar-text.navbar-right {
   margin-right: 0px;
-}
-
-.navbar-inverse .navbar-nav > li > a.active-link {
-  color: $lightBlue;
-}
-
-.navbar-inverse .navbar-right > p > a {
-  color: $darkBlue;
-  @include transition(color 1s ease);
-}
-
-.navbar-inverse .navbar-right > p > a:hover {
-  color: $lightBlue;
-  text-decoration: none;
 }
