@@ -1,4 +1,4 @@
-.navbar-inverse .navbar-nav>li>a {
+.navbar-inverse .navbar-nav > li > a {
   color: $darkBlue;
   @include transition(color 1s ease);
   &:hover, &:focus {
@@ -15,16 +15,16 @@
   margin-right: 0px;
 }
 
-.navbar-inverse .navbar-nav>li>a.active-link {
+.navbar-inverse .navbar-nav > li > a.active-link {
   color: $lightBlue;
 }
 
-.navbar-inverse .navbar-right>p>a {
+.navbar-inverse .navbar-right > p > a {
   color: $darkBlue;
   @include transition(color 1s ease);
 }
 
-.navbar-inverse .navbar-right>p>a:hover {
+.navbar-inverse .navbar-right > p > a:hover {
   color: $lightBlue;
   text-decoration: none;
 }
