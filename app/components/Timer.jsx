@@ -8,7 +8,7 @@ var Timer = React.createClass({
         <div className="col-sm-12">
           <h3 className="text-center">Timer Component</h3>
           <div>
-            <Clock/>
+            <Clock totalSeconds={61}/>
           </div>
         </div>
       </div>

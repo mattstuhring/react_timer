@@ -1,14 +1,17 @@
 var React = require('react');
 
 var Clock = React.createClass({
+  // Declare default props
   getDefaultProps: function() {
     totalSeconds: 0
   },
 
+  // propTypes is used to make sure the data you receive is valid.  For performance reasons, propTypes is only checked in development mode.
   propTypes: {
     totalSeconds: React.PropTypes.number
   },
 
+  // formatSeconds -> converts seconds into '00:00'
   formatSeconds: function(totalSeconds) {
     var seconds = totalSeconds % 60;
     var minutes = Math.floor(totalSeconds / 60);
