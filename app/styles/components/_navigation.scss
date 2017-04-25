@@ -1,12 +1,10 @@
 .navbar-inverse {
 
   .navbar-nav > li > a {
-    // color: $nav-dark-blue;
-    color: $app-color-neutral;
+    color: $nav-dark-blue;
     @include transition(color 1s ease);
     &:hover, &:focus {
-      // color: $nav-light-blue;
-      color: $app-color-sky;
+      color: $nav-light-blue;
       text-decoration: none;
     }
   }
@@ -16,23 +14,24 @@
   }
 
   .navbar-nav > li > a.active-link {
-    // color: $nav-light-blue;
-    color: $app-color-sky;
+    color: $nav-light-blue;
     font-weight: bold;
   }
 
   .navbar-right > p > a {
-    // color: $nav-dark-blue;
-    color: $app-color-neutral;
+    color: $nav-dark-blue;
     @include transition(color 1s ease);
     &:hover {
-      // color: $nav-light-blue;
-      color: $app-color-sky;
+      color: $nav-light-blue;
       text-decoration: none;
     }
   }
-}
 
-.navbar-text.navbar-right {
-  margin-right: 0px;
+  .navbar-nav.navbar-right {
+    margin-right: 30px;
+  }
+
+  .navbar-nav.navbar-right .navbar-text {
+    color: white;
+  }
 }

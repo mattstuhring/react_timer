@@ -5,7 +5,7 @@ var Navigation = () => {
   return (
     <div>
       <nav className="navbar navbar-inverse navbar-fixed-top">
-        <div className="container">
+        <div className="fluid-container">
           <div className="navbar-header">
             <button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
               <span className="sr-only">Toggle navigation</span>
@@ -17,7 +17,7 @@ var Navigation = () => {
           </div>
 
           <div className="collapse navbar-collapse" id="navbar-collapse-1">
-            
+
             <ul className="nav navbar-nav">
               <li>
                 <IndexLink to="/" activeClassName="active-link">Timer</IndexLink>
