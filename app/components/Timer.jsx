@@ -6,7 +6,7 @@ var Timer = React.createClass({
     return (
       <div className="row timer">
         <div className="col-sm-12">
-          <h3 className="text-center">Timer Component</h3>
+          <h1 className="text-center page-title">Timer App</h1>
           <div>
             <Clock totalSeconds={61}/>
           </div>

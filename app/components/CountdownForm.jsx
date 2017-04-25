@@ -27,7 +27,7 @@ var CountdownForm = React.createClass({
               />
             </div>
             <div className="form-group">
-              <button className="btn btn-primary btn-block">Start</button>
+              <button className="btn btn-success btn-block">Start</button>
             </div>
           </form>
         </div>
